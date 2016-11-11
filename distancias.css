@@ -1,0 +1,24 @@
+/** choropleth visualization */
+
+#barcelona_building_footprints{
+  polygon-fill: #FFFFB2;
+  polygon-opacity: 0.8;
+  line-color: #FFF;
+  line-width: 0.5;
+  line-opacity: 1;
+}
+#barcelona_building_footprints [ distance > 1000] {
+   polygon-fill: #BD0026;
+}
+#barcelona_building_footprints [ distance <= 1000] {
+   polygon-fill: #F03B20;
+}
+#barcelona_building_footprints [ distance <= 750] {
+   polygon-fill: #FD8D3C;
+}
+#barcelona_building_footprints [ distance <= 500] {
+   polygon-fill: #FECC5C;
+}
+#barcelona_building_footprints [ distance <= 250] {
+   polygon-fill: #FFFFB2;
+}
